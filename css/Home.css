@@ -1,0 +1,68 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 313px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.banner p:nth-child(1) {
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 3.1875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+/* ! ---------------- main ---------------- */
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.content, .content img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.content img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: 1fr;
+    }
+}
+
+/* .content a:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url("../img/pe-7s-look.png") center no-repeat;
+    background-color: #21bfb9;
+    background-size: 50px;
+    opacity: 0.85;
+} */

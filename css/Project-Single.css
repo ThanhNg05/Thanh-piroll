@@ -1,0 +1,106 @@
+.project-single {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 570px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.project-single-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/SingleProject.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-single-text {
+    width: 75%;
+    padding-left: 99px;
+}
+
+.project-single-text p:nth-child(1) {
+    font-weight: bold;
+    font-size: 38pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-single-text p:nth-child(2) {
+    padding: 33px 0;
+    color: #787878;
+    font-size: 16pt;
+}
+
+.project-single-text p:nth-child(3) {
+    padding-bottom: 60px;
+    color: #787878;
+    font-size: 16pt;
+}
+
+.project-single-text p:nth-child(4), .project-single-text p:nth-child(5) {
+    padding-bottom: 19px;
+}
+
+/* ! ---------------- .project-select ---------------- */
+
+.project-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: white;
+}
+
+.project-select p:nth-child(1) {
+    padding-right: 13px;
+    padding-left: 98px;
+}
+
+.project-select p:nth-child(3) {
+    padding-right: 98px;
+    padding-left: 13px;
+}
+
+/* ! ----------------  Media ---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .project-single {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .project-single-text {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .project-select p:nth-child(1) {
+        padding-left: 5%;
+    }
+    
+    .project-select p:nth-child(3) {
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project-single {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .project-single-text {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .project-select p:nth-child(1) {
+        padding-left: 5%;
+    }
+    
+    .project-select p:nth-child(3) {
+        padding-right: 5%;
+    }
+}

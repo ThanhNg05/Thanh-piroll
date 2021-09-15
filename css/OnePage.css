@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ! ---------------- header ---------------- */
+
+.nav-item a {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #10c9c3;
+}
+
+.nav-item a.active {
+    color: #10c9c3;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+/* ! ---------------- hero ---------------- */
+
+.hero {
+    height: 80vh;
+    margin-top: -70px;
+    padding: 11% 0 0 60%;
+    background-image: url('../img/OnePage/Banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero.grid {
+    display: flex;
+    
+}
+
+.hero-text {
+    overflow: hidden;
+}
+
+.hero p:first-child {
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+
+.hero p:nth-child(2) {
+    padding-bottom: 30px;
+    color: #787878;
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.hero-button * {
+    padding: 27px 90px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #10c9c3;
+    border: none;
+    cursor: pointer;
+}
+
+/* ! ---------------- about, our-work-process ---------------- */
+
+.about, .our-work-process, .need-a-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 420px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+:is(.about, .our-work-process, .need-a-project) p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+:is(.about, .our-work-process, .need-a-project) p:nth-child(2) {
+    padding: 40px 0;
+    font-size: 16pt;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.signature {
+    width: 223px;
+    height: 57px;
+    margin: 0 auto;
+    background-image: url("../img/signature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* ! ---------------- professionals-skills ---------------- */
+
+.professionals-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: 570px;
+    overflow: hidden;
+    background-color: #f8f9f9;
+}
+
+#professionals-skills-container {
+    padding: 165px 85px 165px 100px;
+}
+
+#professionals-skills-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/OnePage/pro_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.professionals-skills p:nth-child(n+2) {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.professionals-skills p:nth-child(1) {
+    padding-bottom: 35px;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+.progress-bar {
+    height: 3px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    background: #d8d8d8;
+}
+
+.progress-bar div {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    background-color: #10c9c3;
+}
+
+.progress-bar #bar1 {
+    width: 75%;
+}
+
+.progress-bar #bar2 {
+    width: 90%;
+}
+
+.progress-bar #bar3 {
+    width: 65%;
+}
+
+/* ! ---------------- info-tracker ---------------- */
+
+.info-tracker {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    min-height: 240px;
+    overflow: hidden;
+    background-color: #10c9c3;
+}
+
+.info-tracker div {
+    display: flex;
+    align-items: center;
+}
+
+.info-tracker div img {
+    padding-right: 30px;
+}
+
+.info-tracker div .stat {
+    display: block;
+}
+
+.stat p:nth-child(1) {
+    padding-bottom: 4px;
+    font-size: 18pt;
+}
+
+.stat p {
+    color: white;
+}
+
+/* ! ---------------- content ---------------- */
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.content-container, .content-container img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.content-container img:hover, .content-button input:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.content-button {
+    grid-column: 1 / 5;
+}
+
+.content-button input {
+    width: 100%;
+    padding: 50px 0;
+    color: #8e8e8e;
+    font-size: 12pt;
+    text-transform: uppercase;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+}
+
+/* ! ---------------- our-work-process ---------------- */
+
+.our-work-process {
+    min-height: 930px;
+}
+
+.our-work-process iframe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* ! ---------------- services ---------------- */
+
+.services {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    min-height: 535px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    row-gap: 60px;
+}
+
+.services div {
+    text-align: center;
+}
+
+.services-description img {
+    padding-right: 30px;
+}
+
+.services-description p {
+    text-align: center;
+}
+
+.services-description p:nth-child(1) {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-description p:nth-child(2) {
+    color: #787878;
+    font-size: 16pt;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* ! ---------------- testimonials ---------------- */
+
+.testimonials {
+    position: relative;
+    min-height: 500px;
+    color: white;
+    text-align: center;
+    background-color: #10c9c3;
+}
+
+.testimonials p:nth-child(1) {
+    padding-top: 180px;
+    padding-bottom: 40px;
+    font-size: 24pt;
+}
+
+.testimonials p:nth-child(2) {
+    padding-bottom: 110px;
+    text-transform: uppercase;
+}
+
+.dot-container {
+    padding-bottom: 60px;
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 6px;
+    vertical-align: middle;
+    background-color: #b0e8e6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot-active {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+/* ! ---------------- clients ---------------- */
+
+.clients {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    min-height: 200px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* ! ---------------- need-a-project ---------------- */
+
+.need-a-project {
+    min-height: 750px;
+    background-color: #f5f5f5;
+}
+
+.need-a-project p:nth-child(1) {
+    padding-top: 80px;
+}
+
+.need-a-project-input-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    column-gap: 30px;
+}
+
+.need-a-project-input-area :is(.your-title, .your-comment, .btn-submit) {
+    grid-column: 1 / 3;
+}
+
+.need-a-project-input-area div input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 24px 0;
+    padding-left: 20px;
+    border: none;
+}
+
+.need-a-project-input-area div input::placeholder {
+    color: #787878;
+}
+
+.need-a-project-input-area .your-comment input {
+    padding-right: 524px;
+    padding-bottom: 146px;
+}
+
+.btn-submit {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.btn-submit * {
+    padding: 27px 90px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #10c9c3;
+    border: none;
+    cursor: pointer;
+}
+
+/* ! ---------------- footer ---------------- */
+
+footer {
+    min-height: 284px;
+    overflow: hidden;
+    background-color: #141414;
+}
+
+.footer-about {
+    width: 40%;
+}
+
+.footer-contact {
+    width: 25%;
+}
+
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    width: 10%;
+}
+
+.footer-about,
+.footer-contact,
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    float: left;
+    padding: 97px 70px 0 70px;
+    color: #bcbcbc;
+}
+
+footer div a {
+    display: block;
+}
+
+footer div > p, footer div > a {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer-about b {
+    color: white;
+}
+
+.footer-contact,
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    color: #bcbcbc;
+}
+
+.footer-links-1 a,
+.footer-links-2 a,
+.footer-links-3 a {
+    color: #bcbcbc;
+    text-decoration: none;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header ul li a,
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* ! ---------------- Header ---------------- */
+
+header {
+    min-height: 100px;
+    padding: 50px 0;
+    overflow: auto;
+}
+
+header #logo {
+    padding-left: 98px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 97px;
+}
+
+header ul li {
+    padding-right: 30px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+header ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #10c9c3;
+}
+
+header ul li a.active {
+    color: #10c9c3;
+}
+
+/* ! ----------------  Footer ---------------- */
+
+footer {
+    min-height: 284px;
+    overflow: auto;
+    background-color: #141414;
+}
+
+.footer-about {
+    width: 40%;
+}
+
+.footer-contact {
+    width: 25%;
+}
+
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    width: 10%;
+}
+
+.footer-about,
+.footer-contact,
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    float: left;
+    padding: 97px 70px 0 70px;
+    color: #bcbcbc;
+}
+
+footer div a {
+    display: block;
+}
+
+.footer-about b {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-contact,
+.footer-links-1,
+.footer-links-2,
+.footer-links-3 {
+    color: #bcbcbc;
+}
+
+.footer-links-1 a,
+.footer-links-2 a,
+.footer-links-3 a {
+    color: #bcbcbc;
+    text-decoration: none;
+}
+
+/* ! ----------------  Media ---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header ul {
+        padding-right: 0;
+    }
+
+    header #logo {
+        margin-right: 10%;
+    }
+
+    ul li {
+        width: calc(100% / 4);
+        padding: 0;
+        text-align: left;
+    }
+
+    .footer-about,  
+    .footer-links-1,
+    .footer-links-3 {
+        width: 50%;
+    }
+
+    .footer-links-3 {
+        padding-bottom: 97px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header ul {
+        padding-right: 0;
+    }
+
+    header #logo {
+        margin-right: 10%;
+        padding-left: 5%;
+    }
+
+    ul li {
+        width: calc(100% / 3);
+        padding: 0;
+        text-align: left;
+    }
+    
+    .footer-about,
+    .footer-contact,
+    .footer-links-1,
+    .footer-links-2,
+    .footer-links-3 {
+        width: 100%;
+    }
+
+    .footer-links-3 {
+        padding-bottom: 97px;
+    }
+}
